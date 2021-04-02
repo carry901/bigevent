@@ -1,4 +1,4 @@
-$(function() {
+git$(function() {
     getUserInfo()
     var layer = layui.layer
         // 实现退出功能
