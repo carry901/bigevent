@@ -1,4 +1,4 @@
-git$(function() {
+$(function() {
     getUserInfo()
     var layer = layui.layer
         // 实现退出功能
@@ -6,7 +6,7 @@ git$(function() {
         layer.confirm('确定退出登录?', { icon: 3, title: '提示' }, function(index) {
             //do something
             localStorage.removeItem('token')
-            location.href = '../大事件项目/login.html'
+            location.href = '../login.html'
             layer.close(index);
         });
     })
@@ -34,7 +34,7 @@ function getUserInfo() {
                         // 强制清空token
                         localStorage.removeItem('token')
                             // 强制跳转到登录页面
-                        location.href = '../大事件项目/login.html'
+                        location.href = '../login.html'
                     }
                 } */
         })
